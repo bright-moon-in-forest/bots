@@ -1,6 +1,5 @@
 import datetime
-
-from pip import main
+import fire
 
 
 def countdown() -> int:
@@ -10,5 +9,4 @@ def countdown() -> int:
 
 
 if __name__ == "__main__":
-    days = countdown()
-    print(days)
+    fire.Fire(countdown)
