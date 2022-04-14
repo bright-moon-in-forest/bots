@@ -21,4 +21,4 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            ${{ env.countdown_days }}
+            离奥海明月交房还剩 ${{ env.countdown_days }} 天！
