@@ -2,7 +2,7 @@
 name = "bots"
 version = "0.1.0"
 description = ""
-authors = ["bright_moob_bot <bright_moon_bot@g2beta.com>"]
+authors = ["bright_moon_bot <bright_moon_bot@g2beta.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
