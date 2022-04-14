@@ -2,8 +2,15 @@ import datetime
 import fire
 
 
-def countdown() -> int:
-    end_day = datetime.date(2023, 12, 31)
+def countdown(year, month, day) -> int:
+    """ 倒计时
+
+    usage: countdown.py --help
+
+    example:
+        countdown.py --year 2023 --month 12 --day 31
+    """
+    end_day = datetime.date(year, month, day)
     today = datetime.date.today()
     
     delta = end_day - today
