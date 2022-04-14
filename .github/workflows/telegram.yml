@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set the value
-        id: step_one
+      - name: get countdown
         run: |
-          echo "countdown_days=$(python3 bots/countdown.py)" >> $GITHUB_ENV
+          python -m pip install --upgrade pip
+          pip install fire
+          echo "countdown_days=$(python bots/countdown.py)" >> $GITHUB_ENV
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
         with:
